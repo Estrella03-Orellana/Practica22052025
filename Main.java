@@ -19,9 +19,31 @@ public class Main {
         // Metodo Sumar con un numero negativo, para que de error 
         int result4 = op.Sumar(-5, 10);
         System.out.println("Resultado de la suma con un número negativo: " + result4);
-        
+
         op.imprimirNumeroImpares(7);
+
+        //Intancia la clase num Opcion
+        Opcion op1 = Opcion.SUMA;
+        if(op1 == Opcion.SUMA){
+            System.out.println("La opcion es suma");
     }
 
+    switch (op1) {
+        case SUMA:
+            System.out.println("La opcion es suma");
+            break;
+        case RESTA:
+            System.out.println("La opcion es resta");
+            break;
+        case MULTIPLICACION:
+            System.out.println("La opcion es multiplicacion");
+            break;
+        case DIVISION:
+            System.out.println("La opcion es division");
+            break;
+    }           
+       
+
+ }
     
 }
